@@ -1,3 +1,4 @@
+
 # Python
 __pycache__/
 *.pyc
@@ -5,7 +6,13 @@ __pycache__/
 *.pyd
 .venv/
 venv/
+env/
+ENV/
+
+# Environment / secrets
 .env
+.envrc
+secrets.toml
 
 # macOS
 .DS_Store
@@ -13,9 +20,29 @@ venv/
 # Streamlit
 .streamlit/
 
-# IDE
+# IDEs / Editors
 .vscode/
 .idea/
+.spyderproject
+.spyproject
+.ropeproject
 
-# If you have secrets later
-secrets.toml
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing / coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
