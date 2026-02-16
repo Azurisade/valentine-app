@@ -21,6 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent
 COVER_IMG = BASE_DIR / "assets" / "images" / "goldi.png"
 AUDIO_FILE = BASE_DIR / "assets" / "audio" / "harry.mp3"
 
+st.write("BASE_DIR:", BASE_DIR)
+st.write("Exists assets?:", (BASE_DIR / "assets").exists())
+st.write("Exists images?:", (BASE_DIR / "assets" / "images").exists())
+st.write("Exists goldi?:", (BASE_DIR / "assets" / "images" / "goldi.png").exists())
+st.write("Images folder contents:", list((BASE_DIR / "assets" / "images").glob("*")) if (BASE_DIR / "assets" / "images").exists() else "NO FOLDER")
+
+
 # -----------------------------
 # AUDIO
 # -----------------------------
